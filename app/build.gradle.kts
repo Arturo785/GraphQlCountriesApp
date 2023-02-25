@@ -5,6 +5,7 @@ plugins {
     kotlin("kapt")
     id("dagger.hilt.android.plugin")
 }
+// we need this configuration
 
 apollo {
     service("service") {
@@ -70,6 +71,7 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-tooling:1.2.0")
     debugImplementation("androidx.compose.ui:ui-test-manifest:1.2.0")
 
+    // the needed dependencies
     implementation("com.apollographql.apollo3:apollo-runtime:3.7.3")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1")
 
